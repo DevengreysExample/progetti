@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form method="post">
+Inserisci utente: <input type="text" name="utente"><br>
+<input type="submit" value="Submit">
+</form><br>
+<table>
+      <tr>
+      	<th>ID</th>
+        <th>USERNAME</th>
+      </tr>
+      <tr th:each="utente : ${Utenti}">
+      <td th:text="${utente.id}"></td>
+        <td th:text="${utente.username}"></td>
+      </tr>
+    </table>
+</body>
+</html>

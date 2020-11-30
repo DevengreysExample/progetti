@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>home</h1>
+<form method="post">
+input test: <input type="text" name="abc"><br>
+<input type="submit" value="Submit">
+</form>
+<table>
+      <tr>
+        <th>NAME</th>
+      </tr>
+      <tr th:each="prod : ${Abcs}">
+        <td th:text="${prod.name}"></td>
+      </tr>
+    </table>
+</body>
+</html>
